@@ -29,6 +29,11 @@ public class Ejemplo2 {
 		
 		//Muestra el valor que hay en posiciones pares
 		
+		//SI QUEREMOS HACER UN EACH, TENDREMOS QUE PRIMERO, DEFINIR UN FOR CON EL
+		//TIPO DE VARIABLE (INTEGER, OBJETO, STRING, ETC) SEA EL TIPO DE LA LISTA
+		//LA LETRA ES UNA LETRA COMO LA (i), donde s eva a mostrar todo o etc.
+		//Y, "POS" EN ESTE CASO ES EL NOMBRE DEL ARRAYLIST 
+		
 		int j=0;
 		for (Integer n: pos) {
 			if (j%2==0) {
