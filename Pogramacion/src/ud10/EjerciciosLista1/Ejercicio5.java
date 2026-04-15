@@ -9,6 +9,6 @@ public class Ejercicio5 {
 		List<Integer> lista = new ArrayList<>();
 		
 		lista.add("Alumno1");
-		
+		j
 	}
 }
