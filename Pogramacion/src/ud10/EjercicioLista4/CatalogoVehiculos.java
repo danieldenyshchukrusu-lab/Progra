@@ -37,9 +37,14 @@ public class CatalogoVehiculos {
 	        System.out.println("Vehículo devuelto por: " + cliente);
 	    }
 
-	    public void eliminarVehiculo(int matricula) throws Exception {
-	        Vehiculos v = buscarVehiculo(matricula);
-	        vehiculos.remove(v);
+	    public void eliminarVehiculo(int matricula) throws Exception { //Para controlar que se esta eliminando algo que esta realmente esta en la lista, 
+	    	try {													   //Utilizo el try/catch para hacerlo más corto, porque si tuviera que recorrer todo con un for each, sería mas extenso, y tendria que utilizar if NULLS
+	            Vehiculos v = buscarVehiculo(matricula);
+	            vehiculos.remove(v);
+	            System.out.println("Vehículo eliminado correctamente");
+	        } catch (Exception e) {
+	            System.out.println("El vehículo no se ha podido eliminar: no existe");
+	        }
 	    }
 
 	    public void mostrarVehiculo(int matricula) throws Exception {
