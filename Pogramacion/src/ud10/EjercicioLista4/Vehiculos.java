@@ -17,7 +17,7 @@ public class Vehiculos {
 	//CONSTRUCTORES
 	
 	public Vehiculos(String marca, String modelo, int añoFabricacion, boolean estado) {
-		MATRICULA++;
+		MATRICULA+=10;
 		this.matricula=MATRICULA;
 		this.marca=marca;
 		this.modelo=modelo;
@@ -87,19 +87,17 @@ public class Vehiculos {
 				+ añoFabricacion + ", estado=" + estado + "]";
 	}
 
-	public void alquilar(Cliente cliente, Vehiculos vehiculo) throws Excepcion {
-		if (vehiculo.isEstado()==true) {
-			vehiculo.setEstado(false);
-			System.out.println("El vehiculo ha sido reclamado por: " +cliente.toString());
+	public void alquilar() throws Excepcion {
+		if (isEstado()==true) {
+			setEstado(false);
 		} else {
 			throw new Excepcion("El vehículo ya está alquilado");
 		}
 	}
 	
-	public void devolucion(Cliente cliente, Vehiculos vehiculo) {
-		if (vehiculo.isEstado()==false) {
-			vehiculo.setEstado(true);
-			System.out.println("El vehiculo ha sido devuelto correctamente por: " +cliente.toString());
+	public void devolucion() {
+		if (isEstado()==false) {
+			setEstado(true);
 		} else {
 			System.out.println("El vehiculo que ha intentado devolver no es correcto");
 		}

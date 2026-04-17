@@ -31,7 +31,7 @@ public class Motos extends Vehiculos {
 	
 	@Override
 	public String toString() {
-		return "Motos [almacenamiento=" + almacenamiento + "]";
+		return super.toString()+ "Motos [almacenamiento=" + almacenamiento + "]";
 	}
 	
 }
