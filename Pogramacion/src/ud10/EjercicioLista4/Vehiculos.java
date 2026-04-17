@@ -93,7 +93,7 @@ public class Vehiculos {
 		} else {
 			throw new Excepcion("El vehículo ya está alquilado");
 		}
-	}
+	} 
 	
 	public void devolucion() {
 		if (isEstado()==false) {

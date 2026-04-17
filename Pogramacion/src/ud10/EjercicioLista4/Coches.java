@@ -17,7 +17,7 @@ public class Coches extends Vehiculos {
 	
 	public Coches() {
 		
-	}
+	} 
 	
 	//GETTERS Y SETTERS
 	

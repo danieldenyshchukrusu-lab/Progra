@@ -46,7 +46,7 @@ public class CatalogoVehiculos {
 	            System.out.println("El vehículo no se ha podido eliminar: no existe");
 	        }
 	    }
-
+ 
 	    public void mostrarVehiculo(int matricula) throws Exception {
 	        Vehiculos v = buscarVehiculo(matricula);
 	        System.out.println(v); //El to_string esta definido, no hace falta que lo ponga

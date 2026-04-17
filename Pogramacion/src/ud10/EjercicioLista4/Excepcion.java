@@ -7,3 +7,4 @@ public class Excepcion extends Exception {
 	}
 	
 }
+ 
