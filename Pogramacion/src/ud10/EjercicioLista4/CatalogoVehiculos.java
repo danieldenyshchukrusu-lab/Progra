@@ -27,13 +27,13 @@ public class CatalogoVehiculos {
 
 	    public void alquilarVehiculo(int matricula, Cliente cliente) throws Exception {
 	        Vehiculos v = buscarVehiculo(matricula);
-	        v.alquilar(); // aquí llamas a tu método
+	        v.alquilar(); 
 	        System.out.println("Vehículo alquilado por: " + cliente);
 	    }
 
 	    public void devolverVehiculo(int matricula, Cliente cliente) throws Exception {
 	        Vehiculos v = buscarVehiculo(matricula);
-	        v.devolucion(); // tu método
+	        v.devolucion(); 
 	        System.out.println("Vehículo devuelto por: " + cliente);
 	    }
 
