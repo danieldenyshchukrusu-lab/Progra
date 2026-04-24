@@ -86,10 +86,12 @@ public class MainPlanta {
 		mapaPlantas.put(2, flor1);
 		mapaPlantas.put(3, flor2);
 		
-		//2.2 BUSCAR PLANTA POR SU ID Y MOSTRAR INFO. !!!FALTA!!!
+		//2.2 BUSCAR PLANTA POR SU ID Y MOSTRAR INFO. (en este caso flor 1).
 		
 		for (Map.Entry<Integer, Planta> a : mapaPlantas.entrySet()) {
-			
+			if (a.getKey()==2) {
+				a.getValue().mostrarInformación();
+			}
 		}
 		
 		//2.3 ELIMINAR PLANTA DEL MAPA A PARTIR DE SU ID. !!!FALTA!!!
