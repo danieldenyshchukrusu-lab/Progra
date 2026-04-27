@@ -63,7 +63,7 @@ public class MainPlanta {
 		
 		//7. Eliminar aquellas plantas que no necesiten agua
 		
-		Iterator<Planta> it = listaPlanta.iterator();
+		Iterator<Planta> it = listaPlanta.iterator(); //ESTO NO TE FUNCA BRO!!!!!!!!!!!!
 		
 		while(it.hasNext()) {
 			if (it.next().isNecesitaAgua()==false) {
@@ -95,8 +95,21 @@ public class MainPlanta {
 		}
 		
 		//2.3 ELIMINAR PLANTA DEL MAPA A PARTIR DE SU ID. !!!FALTA!!!
+	
+		Iterator<Map.Entry<Integer, Planta>> its = mapaPlantas.entrySet().iterator();
+		
+		while (its.hasNext()) {
+			Map.Entry<Integer, Planta> p = its.next();
+			
+			if (p.getKey()==3) {
+				it.remove();
+			}
+		}
 		
 		//2.4 MOSTRAR TODAS LAS PLANTAS DEL MAPA ALMACENADAS. !!!FALTA!!!
 		
+		for (Map.Entry<Integer, Planta> a : mapaPlantas.entrySet()) {
+			a.getValue().mostrarInformación();
+		}
 	}
 }
