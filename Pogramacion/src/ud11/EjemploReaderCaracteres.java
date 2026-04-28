@@ -5,21 +5,21 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class EjemploReader {
+public class EjemploReaderCaracteres {
 	public static void main(String[] args) {
 		//dile a alguien o a cristina si tiene el ejemplo de reader, y tambien, recuerda estudiar muy bien las interfaces bro.
 		
 		FileReader fr=null;
 		BufferedReader entrada = null;
-		String cadena;
+		int c;
 		
 		try {
 			fr =new FileReader("C:/docs/datos.txt");
 			entrada=new BufferedReader(fr);
 			
-			 /*El metodo readLine me devuelve un null cuando llega al final del fichero (este lee de linea en linea, si ve una linea vacia, esta sera null)*/
-			while((cadena=entrada.readLine())!=null) { /* si no pones todo esto dentro, se te ejecuta en bucle la primera linea siempre */
-				System.out.println(cadena);
+			 /*El metodo read me devuelve un -1 cuando no hay mas caracteres que leer en el fichero. */
+			while((c=entrada.read())!=-1) { 
+				System.out.print((char)c);
 			}
 			
 		} catch (FileNotFoundException e) {
