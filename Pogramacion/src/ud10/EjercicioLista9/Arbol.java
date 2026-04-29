@@ -48,4 +48,11 @@ public class Arbol extends Planta {
 		}
 	}
 	
+	//MOSTRAR INFORMACION
+	
+	@Override
+	public String mostrarInformación() {
+		return super.mostrarInformación()+ " Arbol [edad=" + edad + ", tipoHoja=" + tipoHoja + "]";
+	}
+	
 }

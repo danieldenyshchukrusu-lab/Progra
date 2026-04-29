@@ -36,5 +36,14 @@ public class Flor extends Planta {
 		this.setNecesitaAgua(true);
 		System.out.println("La flor ha crecido: " +getAltura());
 	}
+
+	//MOSTRAR INFORMACIÓN
+	
+	@Override
+	public String mostrarInformación() { 
+		return super.mostrarInformación()+ " Flor [color=" + color + "]";
+	}
+	
+	
 	
 }

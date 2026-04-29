@@ -23,7 +23,7 @@ public abstract class Planta  {
 		this.nombre=nombre;
 		this.altura=altura;
 		this.NecesitaAgua=NecesitaAgua;
-		this.IDPlanta=idplanta+2;
+		this.IDPlanta=idplanta+=1;
 		totalplantas+=1;
 	}
 	
