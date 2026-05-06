@@ -11,7 +11,7 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);
 		
-		String nombreFichero=" ";
+		String nombreFichero=" "; /*Esto se puede hacer co split también, intentalo.*/
 		
 		int letraASCII = 0;
 		char letra = ' ';
@@ -26,8 +26,7 @@ public class Ejercicio1 {
 			fr = new FileReader("C:/docs/"+nombreFichero+".csv");
 			br = new BufferedReader(fr);
 			
-			while (letraASCII != -1) {
-				letraASCII = br.read();
+			while ((letraASCII= br.read()) != -1) {
 				letra = (char) letraASCII;
 				if (letra==';') {
 					System.out.print(' ');
