@@ -14,6 +14,7 @@ public class Main {
         // Instalar equipo con sala cerrada (falla porque la sala esta cerrada)
         System.out.println("-- Instalar equipo con sala cerrada --");
         auditorio.instalarSonido(equipo1);
+        System.out.println();
  
         // Abrir sala e instalar equipo
         System.out.println("-- Abrir sala e instalar equipo --");
