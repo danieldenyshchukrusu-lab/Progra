@@ -52,20 +52,41 @@ public abstract class Sala {
         calendario.add(concierto);
     }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getNombre() { 
+    	return nombre;
+    }
+    
+    public void setNombre(String nombre) { 
+    	this.nombre = nombre;
+    }
 
-    public Estado getEstado() { return estado; }
-    public void setEstado(Estado estado) { this.estado = estado; }
+    public Estado getEstado() { 
+    	return estado;
+    }
+    
+    public void setEstado(Estado estado) { 
+    	this.estado = estado;
+    }
 
-    public String getDireccion() { return direccion; }
-    public void setDireccion(String direccion) { this.direccion = direccion; }
+    public String getDireccion() { 
+    	return direccion;
+    }
+    
+    public void setDireccion(String direccion) { 
+    	this.direccion = direccion;
+    }
 
-    public Escenario getEscenario() { return escenario; }
+    public Escenario getEscenario() { 
+    	return escenario;
+    }
 
-    public EquipoSonido getEquipo() { return equipo; }
+    public EquipoSonido getEquipo() { 
+    	return equipo;
+    }
 
-    public List<Concierto> getCalendario() { return calendario; }
+    public List<Concierto> getCalendario() { 
+    	return calendario;
+    }
 
     @Override
     public String toString() {

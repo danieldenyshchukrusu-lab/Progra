@@ -4,14 +4,14 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// Crear salas
-        Auditorio auditorio = new Auditorio("Auditorio Nacional", "Calle Mayor 1", 300.0, "Madera noble", 500);
-        Auditorio sala2 = new Auditorio("Sala Rincon", "Av. del Arte 22", 120.0, "Tarima flotante", 150);
+        Auditorio auditorio = new Auditorio("Auditorio", "Calle Mayor", 300.0, "Madera", 500);
+        Auditorio sala2 = new Auditorio("Sala2", "Avenida Arte 22", 120.0, "Tarima", 150);
  
         // Crear equipos de sonido
         EquipoSonido equipo1 = new EquipoSonido("EQ-001", 120.0);
         EquipoSonido equipo2 = new EquipoSonido("EQ-002", 80.0);
  
-        // Instalar equipo con sala cerrada (falla)
+        // Instalar equipo con sala cerrada (falla porque la sala esta cerrada)
         System.out.println("-- Instalar equipo con sala cerrada --");
         auditorio.instalarSonido(equipo1);
  
@@ -51,8 +51,8 @@ public class Main {
  
         // Crear bandas y programar conciertos
         System.out.println("-- Programar conciertos --");
-        Banda banda1 = new Banda("B-001", "The Rolling Beats", 115.0);
-        Banda banda2 = new Banda("B-002", "Jazz Collective", 75.0);
+        Banda banda1 = new Banda("B-001", "The Rolling Stones", 115.0);
+        Banda banda2 = new Banda("B-002", "Colectivo Rock", 75.0);
         System.out.println();
  
         sala2.setEstado(Sala.Estado.ABIERTA);

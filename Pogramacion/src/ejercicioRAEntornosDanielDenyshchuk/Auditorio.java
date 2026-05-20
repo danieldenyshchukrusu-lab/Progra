@@ -11,11 +11,11 @@ public class Auditorio extends Sala {
     }
  
     public boolean asignarAsientos(int personas) {
+    	int disponibles = numButacas - cantidadButacasOcupadas;
         if (getEstado() != Estado.ABIERTA) {
             System.out.println("La sala '" + getNombre() + "' no está Abierta.");
             return false;
         }
-        int disponibles = numButacas - cantidadButacasOcupadas;
         if (personas > disponibles) {
             System.out.println("No hay suficientes butacas. Disponibles: " + disponibles + ", solicitadas: " + personas);
             return false;
